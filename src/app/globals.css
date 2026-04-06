@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --border: #e5e7eb;
+  --danger: #ef4444;
+  --success: #10b981;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* quick reset for inputs */
+input[type="tel"],
+input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* phone input styling */
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: #fff;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.phone-input-wrapper:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.4);
+  border-color: #14b8a6;
+}
+
+.phone-input-wrapper.phone-input-error {
+  border-color: #f87171;
+}
+.phone-input-wrapper.phone-input-error:focus-within {
+  box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.4);
+  border-color: #f87171;
+}
+
+.phone-input-wrapper .PhoneInputCountry {
+  margin-right: 0.5rem;
+}
+
+.phone-input-wrapper .PhoneInputInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  width: 100%;
+  padding: 0;
+}
+
+/* modal slide up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.25s ease-out;
+}
