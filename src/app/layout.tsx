@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "TapMo-Test",
+  title: "Payment-Test",
   description: "Accept payments instantly",
 };
 

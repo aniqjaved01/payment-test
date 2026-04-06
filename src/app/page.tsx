@@ -174,7 +174,7 @@ export default function Home() {
     <div className="max-w-md mx-auto px-4 py-8">
       <div className="mb-8 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold tracking-tight">TapMo-Test</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Payment-Test</h1>
           <p className="text-sm" style={{ color: "var(--text-muted)" }}>
             Request a payment
           </p>
