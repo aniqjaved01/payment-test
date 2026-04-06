@@ -174,9 +174,11 @@ export default function Home() {
     <div className="max-w-md mx-auto px-4 py-8">
       <div className="mb-8 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold tracking-tight">Payment-Test</h1>
+          <h1 className="text-2xl font-bold tracking-tight" style={{ color: "var(--accent-blue)" }}>
+            Payment-Test
+          </h1>
           <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-            Request a payment
+            Accept payments across Africa
           </p>
         </div>
         <Link
@@ -214,7 +216,7 @@ export default function Home() {
               className={`w-full pl-8 pr-4 py-3 text-lg rounded-xl border bg-white focus:outline-none focus:ring-2 transition-shadow ${
                 touched.amount && errors.amount
                   ? "border-red-400 focus:ring-red-300/40 focus:border-red-400"
-                  : "focus:ring-teal-500/40 focus:border-teal-500"
+                  : "focus:ring-green-500/40 focus:border-green-500"
               }`}
               style={{
                 borderColor: touched.amount && errors.amount ? undefined : "var(--border)",
@@ -233,7 +235,7 @@ export default function Home() {
           </label>
           <PhoneInput
             international
-            defaultCountry="US"
+            defaultCountry="NG"
             value={phone}
             onChange={handlePhoneChange}
             onBlur={() => {

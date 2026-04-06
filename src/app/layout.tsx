@@ -9,7 +9,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Payment-Test",
-  description: "Accept payments instantly",
+  description: "Accept payments across Africa",
 };
 
 export default function RootLayout({

@@ -82,9 +82,9 @@ export default function TransactionsPage() {
     <div className="max-w-md mx-auto px-4 py-8">
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold tracking-tight">Transactions</h1>
+          <h1 className="text-2xl font-bold tracking-tight" style={{ color: "var(--accent-blue)" }}>Transactions</h1>
           <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-            All Stripe payments
+            All payments
           </p>
         </div>
         <Link
